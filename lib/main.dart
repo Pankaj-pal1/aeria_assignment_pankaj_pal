@@ -17,8 +17,9 @@ class MyApp extends StatelessWidget {
     return MultiBlocProvider(
       providers: blocProviders,
       child: MaterialApp(
+        debugShowCheckedModeBanner: false,
         navigatorKey: navigatorKey,
-        title: 'Flutter Demo',
+        title: '',
         theme: ThemeData(
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         ),

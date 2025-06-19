@@ -38,7 +38,7 @@ class _BoxScreenState extends State<BoxScreen> {
       builder: (BuildContext context, BoxLayoutState state) {
         if (state is BoxLayoutInitial) {
           return Scaffold(
-            appBar: AppBar(title: const Text('C Box Layout')),
+            appBar: AppBar(title: const Text('Pankaj Pal Box Layout')),
             body: Padding(
               padding: const EdgeInsets.all(16.0),
               child: Column(
