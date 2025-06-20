@@ -114,7 +114,7 @@ class BoxContainer extends StatelessWidget {
 
         return SingleChildScrollView(
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start, // Align 'C' to the left
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               if (topWidgets.isNotEmpty) Wrap(spacing: boxGap, runSpacing: boxGap, children: topWidgets),
               SizedBox(height: topWidgets.isNotEmpty && middleWidgets.isNotEmpty ? boxGap : 0),
@@ -143,9 +143,9 @@ class BoxContainer extends StatelessWidget {
           border: Border.all(color: Colors.black54, width: 0.5),
           borderRadius: BorderRadius.circular(4),
         ),
-        child: Center(
-          child: Text('${boxes[index].id}', style: TextStyle(color: Colors.white)),
-        ), // Optional: display ID
+        // child: Center(
+        //   child: Text('${boxes[index].id}', style: TextStyle(color: Colors.white)),
+        // ),
       ),
     );
   }
